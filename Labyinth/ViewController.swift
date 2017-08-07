@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 
     //掉進關卡的判斷
     func stage(view:UIView) {
-        for stage in app.stages[0...4] {
+        for stage in app.stages {
             if app.ball.center.x >= stage.frame.origin.x &&
                 app.ball.center.x <= stage.frame.origin.x + stage.frame.width &&
                 app.ball.center.y >= stage.frame.origin.y &&
